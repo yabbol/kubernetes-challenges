@@ -6,9 +6,9 @@ metadata:
   labels:
     app.kubernetes.io/instance: jenkyll
 spec:
-  storageClassName: jenkyl-pv
+  storageClassName: local-storage
   accessModes:
-  - ReadWriteOnce
+  - ReadWriteMany
   capacity:
     storage: 5Gi
   persistentVolumeReclaimPolicy: Retain
