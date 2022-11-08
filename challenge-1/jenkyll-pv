@@ -3,6 +3,8 @@ kind: PersistentVolume
 metadata:
   name: jenkyl-pv
   namespace: development
+  labels:
+    app.kubernetes.io/instance: jenkyll
 spec:
   storageClassName: jenkyl-pv
   accessModes:
